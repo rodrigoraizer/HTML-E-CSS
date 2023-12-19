@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace; /*CSS safe font combinations (pesquisa Google) - CSS Web Safe Fonts*/
+            /*Tamanho de fontes: 
+            Medidas absolutas
+            cm, mm, in(polegada), px(pixel), pt(ponto), pc
+
+            Medidas relativas
+            em(relativo ao M maiusculo da letra), ex(altura x da letra), rem, vw (% da largura da viewport), vh (% da altura da viewport), %.
+
+            RECOMENDAÇÃO USAR px e em. 16px geralmente é = 1em
+            */
+            font-size: 1.2em;
+        }
+        h1, h2 {
+            font: italic 900 2em 'fantasy';
+            text-decoration: underline;/*sublinhado*/ 
+            /* shorthand font (condensa todas as configurações)
+        - font-style -> font-weight -> font-size -> font-family 
+        seguir essa ordem */
+                   
+        /*font-family: fantasy;
+            font-weight:100 ; /*peso da fonte (lighter, normal, bold, bolder) ou pode usar de 100 à 900*/
+            /*font-style: italic;*/
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, cumque odit itaque fugiat ullam labore soluta error commodi assumenda blanditiis magnam cum dolore atque a, expedita officia totam pariatur? Asperiores! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptate dicta cupiditate deserunt. Facilis beatae voluptate, tempore architecto veniam veritatis recusandae? Tempora nesciunt, explicabo qui odio quia vitae iusto perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente velit magni ducimus quis ea rem iure soluta! Nemo tempora aperiam veniam velit non tempore illum dolorum corrupti deleniti libero. Ab.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia tempore sed dignissimos possimus ut, quas saepe, officiis ullam similique repellat eveniet nesciunt voluptatum est cupiditate eius quo? Laborum, culpa quas?</p>
+</body>
+</html>
