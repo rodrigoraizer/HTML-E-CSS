@@ -1,19 +1,21 @@
-@charset "UTF-8"
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root{
     --fonte-titulo: 'Passion One', cursive;
-    --fonte-subtitulo: Verdana, cursive;
+    --fonte-subtitulo: Verdana, Tahoma, sans-serif;
     --fonte-texto: 'Sriracha', cursive;
 }
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
-body{
-    background-color: white;
-    font-family: var(--fonte-texto);
+html, body{
+    background-color:darkgray;
+    min-height: 100hv;
+    font-family: var(--fonte-subtitulo);
 }
 header{
     background-color: black;
@@ -21,42 +23,63 @@ header{
     text-align: center;        
 }
 header > h1{
+    padding-top: 50px;
     font-family: var(--fonte-titulo);
-    font-variant: small-caps;
-    font-size: 5em;
-    font-weight: normal;
+    font-variant: small-caps;  /*deixa tudo maiúsculo com destaque para as primeiras letras*/  
+    font-size: 8vw;/*fonte fica proporcional a viewport*/
 }
 header > p{
-    font-family: var(--fonte-subtitulo);
-    padding: 50px;
+    padding-bottom: 50px;
+    font-family: var(--fonte-subtitulo);    
 }
 a{
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
-.container1{
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-        background-color: rgb(255, 255, 255);            
-        background-size: 100% 100%;
+a:hover{
+    text-decoration: underline;
 }
-.container2{
-        display: inline-block;
-        padding: 5px;
-        background-color: rgb(51, 51, 51);
-        color: white;
-        background-size: cover;
-        background-attachment: fixed;
-        background-image: url(imagens/background001.jpg);
-        
+div{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-texto);
+    font-size: 3vw;
 }
-.container3{
-    position: relative;            
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
+div > p{
+    padding-bottom: 2em;
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: rgb(53, 53, 53);
+    color: white; 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.504); 
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.374);
+    text-shadow: 1px 1px 0px black;
+}
+#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+}
+#img02{
     background-image: url(imagens/background002.jpg);
-    background-size: 100% 100%;
+    
 }
-.conteudo1{
-    width: 200px;
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
