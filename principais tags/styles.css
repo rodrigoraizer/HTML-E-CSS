@@ -1,0 +1,60 @@
+/* Reset de estilos para evitar estilos padrão do navegador */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para o cabeçalho */
+  .cabecalho {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilos para o menu de navegação */
+  .menu {
+    list-style: none;
+  }
+  
+  .menu li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Estilos para a seção principal */
+  .secao-principal {
+    width: 70%;
+    margin: 20px auto;
+  }
+  
+  .artigo {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para a barra lateral */
+  .barra-lateral {
+    width: 25%;
+    background-color: #eee;
+    float: right;
+    padding: 20px;
+  }
+  
+  /* Estilos para o rodapé */
+  .rodape {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
