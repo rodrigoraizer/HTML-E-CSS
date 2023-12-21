@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off"> <!--method por padrão é "GET" onde os dados do formulário aparecem na url e tem limitação de 3mil bits para envio, porém pode usar "POST", que oculta esses dados na url e não tem limite. autocomplete pode ser on/off-->
+        <p> <!--O label faz referência ao Id, vinculando-os-->
+            <label for="inome">Nome:</label>
+            <input type="text" name="Nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome</label>: 
+            <input type="text" name="Sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
