@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    iframe{
+        width: 95vw;
+        height: 400px;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum obcaecati cumque quod sint blanditiis sit sapiente quasi quisquam expedita dicta qui eaque rem, officiis quidem aut debitis repellendus? Sapiente, dolorem!</p>
+
+    <ul>
+        <li><a href="paginas-extras/pg001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pg002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pg003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod ex earum possimus dolores nemo. Nesciunt provident, totam ad illo placeat alias tempore, aspernatur consequuntur dolorum eligendi repellat expedita nobis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, ipsa nisi. Voluptatum ducimus reiciendis rem quia? Voluptatem libero laborum amet alias asperiores fuga veniam odio reprehenderit, placeat sapiente quidem culpa!</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><img src='imagens/bugdroid.png'>">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, nemo minus, laboriosam nam porro quisquam consequatur officia in eum incidunt sapiente dolore omnis modi sit tempore neque! Reprehenderit, consectetur atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, consequuntur. Error amet veritatis minus vel voluptatum? Harum accusantium inventore reiciendis molestiae quo, ut fugit, id illo asperiores quod totam velit!</p>
+</body>
+</html>
