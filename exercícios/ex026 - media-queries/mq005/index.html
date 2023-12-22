@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span class="material-icons" id="burguer" onclick="clickmenu()">
+            menu
+            </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="3">Opção 1</a></li>
+                <li><a href="3">Opção 2</a></li>
+                <li><a href="3">Opção 3</a></li>
+                <li><a href="3">Opção 4</a></li>
+                <li><a href="3">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, esse, facere beatae autem quidem dignissimos officiis est vero tempore architecto error, deleniti eius molestiae! Vel minima voluptatibus atque porro quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi obcaecati reprehenderit beatae velit vitae dolorum voluptatem ex fuga eius, ullam, pariatur maiores doloremque repudiandae fugit asperiores, corrupti recusandae aspernatur.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet exercitationem obcaecati earum provident eaque nihil voluptatum nesciunt facilis tempora sequi, explicabo aliquam esse magni ad sit tenetur. Tempora, quasi beatae.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, accusantium commodi porro natus ab nulla officia vero autem blanditiis qui tempore, cumque molestiae assumenda a quod culpa vel? Sit, fugit?</p>
+        </article>
+    </main>
+    <script>
+        function mudoutamanho(){
+            if (window.innerWidth >=768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickmenu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
